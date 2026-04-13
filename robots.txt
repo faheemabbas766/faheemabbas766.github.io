@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faheemabbas766.github.io/sitemap.xml
