@@ -30,6 +30,28 @@ if (page && siteNav) {
   });
 }
 
+if (page === "projects") {
+  const publicHighlights = document.getElementById("public-highlights");
+  const selectedBuilds = document.getElementById("selected-builds");
+  const selectedBuildGrid = selectedBuilds?.querySelector(".project-grid");
+
+  if (publicHighlights && selectedBuilds) {
+    selectedBuilds.parentNode.insertBefore(publicHighlights, selectedBuilds);
+  }
+
+  if (selectedBuildGrid) {
+    [...selectedBuildGrid.children]
+      .sort((leftCard, rightCard) => {
+        const leftRank = Number(leftCard.dataset.rank || 999);
+        const rightRank = Number(rightCard.dataset.rank || 999);
+        return leftRank - rightRank;
+      })
+      .forEach((card) => {
+        selectedBuildGrid.appendChild(card);
+      });
+  }
+}
+
 const storeShowcases = [...document.querySelectorAll(".store-showcase")];
 
 if (storeShowcases.length) {
