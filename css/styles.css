@@ -1106,6 +1106,10 @@ textarea {
   padding: clamp(0.8rem, 2vw, 1.4rem);
 }
 
+.gallery-modal[hidden] {
+  display: none;
+}
+
 .gallery-modal-backdrop {
   position: absolute;
   inset: 0;
