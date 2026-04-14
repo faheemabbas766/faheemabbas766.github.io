@@ -895,11 +895,29 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 0.95rem;
 }
 
 .project-logo i {
   font-size: 1.45rem;
   color: var(--brand);
+}
+
+.project-shot {
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid rgba(15, 27, 36, 0.08);
+  background: linear-gradient(180deg, rgba(245, 247, 250, 0.92), rgba(239, 234, 226, 0.92));
+  box-shadow: 0 14px 28px rgba(15, 27, 36, 0.06);
+  aspect-ratio: 16 / 9;
+}
+
+.project-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project-type {
