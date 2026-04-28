@@ -1280,6 +1280,10 @@ textarea {
   box-shadow: none;
 }
 
+.gallery-modal-actions [hidden] {
+  display: none;
+}
+
 .gallery-modal-actions .button-secondary {
   color: #fff;
   background: rgba(255, 255, 255, 0.08);
