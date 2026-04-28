@@ -34,6 +34,7 @@ if (page === "projects") {
   const publicHighlights = document.getElementById("public-highlights");
   const selectedBuilds = document.getElementById("selected-builds");
   const selectedBuildGrid = selectedBuilds?.querySelector(".project-grid");
+  const storeGalleryStack = publicHighlights?.querySelector(".store-gallery-stack");
 
   if (publicHighlights && selectedBuilds) {
     selectedBuilds.parentNode.insertBefore(publicHighlights, selectedBuilds);
@@ -48,6 +49,18 @@ if (page === "projects") {
       })
       .forEach((card) => {
         selectedBuildGrid.appendChild(card);
+      });
+  }
+
+  if (storeGalleryStack) {
+    [...storeGalleryStack.children]
+      .sort((leftCard, rightCard) => {
+        const leftRank = Number(leftCard.dataset.storeRank || 999);
+        const rightRank = Number(rightCard.dataset.storeRank || 999);
+        return leftRank - rightRank;
+      })
+      .forEach((card) => {
+        storeGalleryStack.appendChild(card);
       });
   }
 }
@@ -160,9 +173,12 @@ if (storeShowcases.length) {
       if (activeShowcase.secondaryUrl) {
         modalSecondary.href = activeShowcase.secondaryUrl;
         modalSecondary.hidden = false;
+        modalSecondary.setAttribute("aria-hidden", "false");
         modalSecondary.querySelector("span").textContent = activeShowcase.secondaryLabel;
       } else {
+        modalSecondary.removeAttribute("href");
         modalSecondary.hidden = true;
+        modalSecondary.setAttribute("aria-hidden", "true");
       }
     };
 
