@@ -152,6 +152,22 @@ if (storeShowcases.length) {
     let activeShotIndex = 0;
     let lastTrigger = null;
 
+    const updateActionIcon = (action, url, fallbackIcon) => {
+      const icon = action.querySelector("i");
+
+      if (!icon) {
+        return;
+      }
+
+      if (url.includes("apps.apple.com")) {
+        icon.className = "bi bi-apple";
+      } else if (url.includes("play.google.com")) {
+        icon.className = "bi bi-google-play";
+      } else {
+        icon.className = fallbackIcon;
+      }
+    };
+
     const updateModal = () => {
       const activeShowcase = showcaseData[activeShowcaseIndex];
       const activeShot = activeShowcase.screenshots[activeShotIndex];
@@ -166,6 +182,7 @@ if (storeShowcases.length) {
         modalPrimary.href = activeShowcase.primaryUrl;
         modalPrimary.hidden = false;
         modalPrimary.querySelector("span").textContent = activeShowcase.primaryLabel;
+        updateActionIcon(modalPrimary, activeShowcase.primaryUrl, "bi bi-arrow-up-right");
       } else {
         modalPrimary.hidden = true;
       }
@@ -175,6 +192,7 @@ if (storeShowcases.length) {
         modalSecondary.hidden = false;
         modalSecondary.setAttribute("aria-hidden", "false");
         modalSecondary.querySelector("span").textContent = activeShowcase.secondaryLabel;
+        updateActionIcon(modalSecondary, activeShowcase.secondaryUrl, "bi bi-apple");
       } else {
         modalSecondary.removeAttribute("href");
         modalSecondary.hidden = true;
