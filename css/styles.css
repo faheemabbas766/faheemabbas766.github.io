@@ -1428,6 +1428,51 @@ textarea {
   gap: 1.25rem;
 }
 
+.contributor-grid {
+  align-items: stretch;
+}
+
+.contributor-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.contribution-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contribution-item {
+  display: grid;
+  gap: 0.28rem;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(2, 86, 155, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(241, 249, 255, 0.98));
+  box-shadow: 0 14px 28px rgba(2, 41, 74, 0.06);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contribution-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(19, 185, 253, 0.28);
+  box-shadow: 0 20px 34px rgba(2, 41, 74, 0.1);
+}
+
+.contribution-item strong {
+  color: var(--brand);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contribution-item span {
+  color: var(--ink);
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
 .spotlight-card {
   position: relative;
   overflow: hidden;
