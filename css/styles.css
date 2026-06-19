@@ -212,6 +212,46 @@ textarea {
   color: var(--muted);
 }
 
+.policy-shell {
+  max-width: 920px;
+  margin: 2rem auto 0;
+  padding: clamp(1.4rem, 4vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-soft);
+}
+
+.policy-shell h1,
+.policy-shell h2 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.policy-shell h1 {
+  margin: 0.7rem 0 0.8rem;
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 1;
+}
+
+.policy-shell h2 {
+  margin: 2rem 0 0.6rem;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.policy-shell p,
+.policy-shell li {
+  color: var(--muted);
+}
+
+.policy-shell ul {
+  padding-left: 1.2rem;
+}
+
+.policy-shell li + li {
+  margin-top: 0.45rem;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
