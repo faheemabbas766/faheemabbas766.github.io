@@ -857,7 +857,8 @@ textarea {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
+  gap: 0.85rem;
+  padding: 1.25rem;
   border-color: rgba(2, 86, 155, 0.12);
   background:
     linear-gradient(90deg, rgba(19, 185, 253, 0.055) 1px, transparent 1px),
@@ -880,17 +881,7 @@ textarea {
 }
 
 .project-card::after {
-  content: "";
-  position: absolute;
-  inset: auto 1.4rem 1.2rem auto;
-  width: 3.6rem;
-  height: 3.6rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(19, 185, 253, 0.2);
-  background:
-    linear-gradient(135deg, transparent 44%, rgba(19, 185, 253, 0.16) 44% 56%, transparent 56%),
-    rgba(255, 255, 255, 0.42);
-  transform: rotate(45deg);
+  content: none;
 }
 
 .project-card:nth-child(3n + 1) {
@@ -933,16 +924,17 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  min-height: 3.9rem;
 }
 
 .project-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 4.35rem;
-  height: 4.35rem;
-  padding: 0.75rem;
-  border-radius: 1.35rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  padding: 0.65rem;
+  border-radius: 1.15rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(235, 248, 255, 0.92));
   border: 1px solid rgba(19, 185, 253, 0.18);
   box-shadow: var(--shadow-soft);
@@ -952,7 +944,7 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 0.95rem;
+  border-radius: 0.78rem;
 }
 
 .project-logo i {
@@ -979,7 +971,52 @@ textarea {
 
 .project-type {
   color: var(--brand);
+  max-width: 11rem;
+  text-align: right;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.project-copy {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.project-card p {
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.project-proof {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.72rem;
+  border: 1px solid rgba(19, 185, 253, 0.14);
+  border-radius: 1.05rem;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.project-proof span {
+  display: block;
+  color: var(--muted);
   font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.project-proof strong {
+  display: block;
+  margin-bottom: 0.12rem;
+  color: var(--ink);
+  font-size: 0.74rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -990,22 +1027,24 @@ textarea {
   margin: 0;
   list-style: none;
   display: grid;
-  gap: 0.7rem;
+  gap: 0.55rem;
 }
 
 .project-list li {
   position: relative;
-  padding-left: 1.15rem;
+  padding-left: 1rem;
   color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.36;
 }
 
 .project-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.7rem;
-  width: 0.5rem;
-  height: 0.5rem;
+  top: 0.57rem;
+  width: 0.38rem;
+  height: 0.38rem;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
 }
@@ -1015,23 +1054,36 @@ textarea {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.9rem;
+  gap: 0.65rem;
   margin-top: auto;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
 }
 
 .project-links {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.55rem;
 }
 
 .text-link {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(19, 185, 253, 0.08);
   color: var(--brand);
   font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.project-card .project-tags {
+  gap: 0.45rem;
+}
+
+.project-card .tag {
+  padding: 0.5rem 0.68rem;
+  font-size: 0.82rem;
 }
 
 .text-link:hover {
@@ -1464,7 +1516,7 @@ textarea {
 
 .highlight-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: 1.25rem;
 }
 
@@ -1479,13 +1531,52 @@ textarea {
 
 .contribution-list {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
+}
+
+.contribution-pills {
+  margin-top: 1.2rem;
+}
+
+.contribution-proof-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.contribution-proof-grid div {
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.contribution-proof-grid strong,
+.contribution-proof-grid span {
+  display: block;
+}
+
+.contribution-proof-grid strong {
+  margin-bottom: 0.28rem;
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contribution-proof-grid span {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.94rem;
+  line-height: 1.45;
 }
 
 .contribution-item {
   display: grid;
   gap: 0.28rem;
-  padding: 1rem;
+  padding: 0.9rem;
   border-radius: 1.1rem;
   border: 1px solid rgba(2, 86, 155, 0.12);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(241, 249, 255, 0.98));
@@ -1509,7 +1600,7 @@ textarea {
 
 .contribution-item span {
   color: var(--ink);
-  font-size: 0.96rem;
+  font-size: 0.92rem;
   line-height: 1.45;
 }
 
@@ -1555,9 +1646,9 @@ textarea {
 .spotlight-card h2 {
   margin: 0 0 0.7rem;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1;
-  letter-spacing: -0.06em;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
 }
 
 .spotlight-card .section-title,
@@ -1889,6 +1980,10 @@ textarea {
   .highlight-grid,
   .brand-strip,
   .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contribution-list {
     grid-template-columns: 1fr;
   }
 
