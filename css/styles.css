@@ -252,6 +252,33 @@ textarea {
   margin-top: 0.45rem;
 }
 
+.seo-summary-card {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(19, 185, 253, 0.18);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 8% 12%, rgba(19, 185, 253, 0.18), transparent 28%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(236, 249, 255, 0.88));
+  box-shadow: var(--shadow-soft);
+}
+
+.seo-summary-card h2 {
+  margin: 0.95rem 0 0.75rem;
+  max-width: 18ch;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.7rem, 3.3vw, 2.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.seo-summary-card p {
+  max-width: 72rem;
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -478,6 +505,13 @@ textarea {
   background: #0b1319;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+.hero-card picture,
+.contributor-score-card picture {
+  position: absolute;
+  inset: 0;
+  display: block;
 }
 
 .hero-card::before,
@@ -1645,6 +1679,17 @@ textarea {
   object-position: 62% center;
   opacity: 0.7;
   filter: saturate(108%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 .contributor-score-card > div {

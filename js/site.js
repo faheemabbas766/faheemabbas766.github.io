@@ -22,6 +22,7 @@ if (page && siteNav) {
     if (
       (page === "home" && href === "index.html") ||
       (page === "projects" && href === "projects.html") ||
+      (page === "flutter-contributor" && href === "flutter-contributors-pakistan.html") ||
       (page === "resume" && href === "resume.html") ||
       (page === "contact" && href === "contact.html")
     ) {
