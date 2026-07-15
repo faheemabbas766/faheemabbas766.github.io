@@ -782,7 +782,7 @@ textarea {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.panel-dark .stack-block h4 {
+.panel-dark .stack-block h3 {
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -1910,7 +1910,7 @@ textarea {
   margin-top: 1.1rem;
 }
 
-.stack-block h4 {
+.stack-block h3 {
   margin: 0 0 0.55rem;
   font-size: 0.98rem;
   letter-spacing: 0.02em;
