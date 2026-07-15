@@ -1604,6 +1604,125 @@ textarea {
   line-height: 1.45;
 }
 
+.contributor-hero h1 {
+  max-width: 12ch;
+}
+
+.contributor-score-card {
+  position: relative;
+  display: grid;
+  align-content: end;
+  min-height: 38rem;
+  height: 100%;
+  overflow: hidden;
+  padding: 1.45rem;
+  border-radius: 34px;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(7, 18, 30, 0.08), rgba(7, 18, 30, 0.78)),
+    linear-gradient(135deg, rgba(19, 185, 253, 0.2), rgba(0, 200, 150, 0.1)),
+    #071a2c;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+.contributor-score-card::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+.contributor-score-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+  opacity: 0.7;
+  filter: saturate(108%);
+}
+
+.contributor-score-card > div {
+  position: relative;
+  z-index: 2;
+}
+
+.contributor-score-card h2 {
+  margin: 0.35rem 0 0.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.1rem, 4vw, 3.25rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.contributor-score-card p {
+  margin: 0;
+  max-width: 28rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.score-label {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  color: #c8efff;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.3rem;
+}
+
+.score-grid div {
+  padding: 0.85rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.score-grid strong,
+.score-grid span {
+  display: block;
+}
+
+.score-grid strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.score-grid span {
+  margin-top: 0.24rem;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.contributor-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.contributor-cta > div:first-child {
+  max-width: 58rem;
+}
+
 .spotlight-card {
   position: relative;
   overflow: hidden;
@@ -2001,6 +2120,15 @@ textarea {
     min-height: 34rem;
   }
 
+  .contributor-score-card {
+    min-height: 34rem;
+  }
+
+  .contributor-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .value-grid,
   .project-grid,
   .capability-grid,
@@ -2228,6 +2356,22 @@ textarea {
   .hero-card {
     min-height: 22rem;
     border-radius: 22px;
+  }
+
+  .contributor-score-card {
+    min-height: 25rem;
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  .contributor-score-card::before {
+    inset: 0.65rem;
+    border-radius: 18px;
+  }
+
+  .score-grid {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
   }
 
   .hero p {
