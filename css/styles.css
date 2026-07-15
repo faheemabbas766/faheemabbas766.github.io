@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: optional;
+  src: url("../assets/fonts/dm-sans-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: optional;
+  src: url("../assets/fonts/sora-latin.woff2") format("woff2");
+}
+
 :root {
   --bg: #eef8ff;
   --bg-soft: #dff4ff;
@@ -44,7 +60,7 @@ body {
     linear-gradient(135deg, rgba(19, 185, 253, 0.18), transparent 34%),
     linear-gradient(180deg, #f8fcff 0%, #eef8ff 48%, #f8fbff 100%);
   background-size: 34px 34px, 34px 34px, auto, auto;
-  font-family: "Manrope", sans-serif;
+  font-family: "DM Sans", sans-serif;
   line-height: 1.6;
 }
 
@@ -119,7 +135,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -200,7 +216,7 @@ textarea {
 
 .section-title {
   margin: 0 0 0.9rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.05;
   letter-spacing: -0.05em;
@@ -224,7 +240,7 @@ textarea {
 
 .policy-shell h1,
 .policy-shell h2 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   letter-spacing: -0.04em;
 }
 
@@ -267,7 +283,7 @@ textarea {
 .seo-summary-card h2 {
   margin: 0.95rem 0 0.75rem;
   max-width: 18ch;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(1.7rem, 3.3vw, 2.6rem);
   line-height: 1.02;
   letter-spacing: -0.05em;
@@ -356,7 +372,7 @@ textarea {
 .hero h1,
 .hero h2 {
   margin: 1rem 0 1.3rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(2.75rem, 5.2vw, 4.85rem);
   line-height: 0.95;
   letter-spacing: -0.07em;
@@ -852,13 +868,13 @@ textarea {
 .timeline-card h3,
 .mini-panel h3 {
   margin: 0 0 0.55rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1.25rem;
   letter-spacing: -0.04em;
 }
 
 .stat-card .number {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(2.2rem, 4vw, 3.35rem);
   line-height: 0.95;
   letter-spacing: -0.06em;
@@ -1166,7 +1182,7 @@ textarea {
   z-index: 1;
   display: block;
   margin-bottom: 0.4rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(1.45rem, 2.3vw, 2rem);
   font-weight: 800;
   letter-spacing: -0.05em;
@@ -1219,7 +1235,7 @@ textarea {
 
 .store-showcase-meta h3 {
   margin: 0.2rem 0 0.35rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   letter-spacing: -0.04em;
 }
@@ -1496,7 +1512,7 @@ textarea {
 
 .gallery-modal-title {
   margin: 0.3rem 0 0.55rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(1.45rem, 2vw, 2rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -1699,7 +1715,7 @@ textarea {
 
 .contributor-score-card h2 {
   margin: 0.35rem 0 0.2rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(2.1rem, 4vw, 3.25rem);
   line-height: 0.95;
   letter-spacing: -0.06em;
@@ -1745,7 +1761,7 @@ textarea {
 }
 
 .score-grid strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1.55rem;
   line-height: 1;
 }
@@ -1809,7 +1825,7 @@ textarea {
 
 .spotlight-card h2 {
   margin: 0 0 0.7rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   line-height: 1.04;
   letter-spacing: -0.03em;
@@ -1948,7 +1964,7 @@ textarea {
 
 .quote-panel blockquote {
   margin: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(1.5rem, 3vw, 2.15rem);
   line-height: 1.12;
   letter-spacing: -0.04em;
@@ -1996,7 +2012,7 @@ textarea {
 
 .availability-title {
   margin: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: clamp(2rem, 4vw, 2.6rem);
   line-height: 1.02;
   letter-spacing: -0.05em;
