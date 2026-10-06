@@ -77,8 +77,10 @@
         ]
       }
     </script>
+      <link href="css/refresh.css" rel="stylesheet" />
   </head>
   <body data-page="contact">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">
@@ -87,10 +89,10 @@
           </span>
           Faheem Abbas
         </a>
-        <button class="menu-toggle" type="button" aria-label="Toggle navigation">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
           <i class="bi bi-list"></i>
         </button>
-        <nav class="site-nav" aria-label="Primary navigation">
+        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="projects.html">Projects</a>
           <a href="flutter-contributors-pakistan.html">Flutter Contributor</a>
@@ -100,77 +102,8 @@
       </div>
     </header>
 
-    <main class="page-shell">
-      <section class="section">
-        <div class="container highlight-grid">
-          <article class="spotlight-card reveal">
-            <div class="eyebrow">Contact</div>
-            <h1 class="section-title">Let’s build something that feels modern and ships clean.</h1>
-            <p class="lead">
-              If you need a mobile developer for a new product, a feature sprint, a redesign, or a
-              codebase that needs stronger direction, reach out. I am interested in work that values
-              product quality and good engineering judgment.
-            </p>
-            <div class="button-row" style="margin-top: 1.5rem;">
-              <a class="button" href="mailto:faheemabbas766@gmail.com">
-                <i class="bi bi-envelope"></i>
-                Email me
-              </a>
-              <a
-                class="button-secondary"
-                href="https://linkedin.com/in/faheemabbas766"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="bi bi-linkedin"></i>
-                Connect on LinkedIn
-              </a>
-            </div>
-          </article>
-
-          <article class="availability-card reveal reveal-delay-1">
-            <div class="availability-top">
-              <div class="eyebrow" style="background: rgba(255,255,255,0.08); color: #93c5fd;">Best fit</div>
-              <span class="availability-note">Freelance • Contract • Remote</span>
-            </div>
-            <h3 class="availability-title">Best fit for teams that need polish, speed, and clean execution.</h3>
-            <p class="availability-intro">
-              The strongest match is product work where delivery quality matters as much as speed:
-              new app builds, scoped upgrades, revenue-critical flows, and modern mobile features.
-            </p>
-            <div class="fit-grid">
-              <article class="fit-item">
-                <i class="bi bi-phone"></i>
-                <div>
-                  <strong>New app builds</strong>
-                  <span>MVPs, fresh launches, and stronger foundations.</span>
-                </div>
-              </article>
-              <article class="fit-item">
-                <i class="bi bi-tools"></i>
-                <div>
-                  <strong>Feature sprints</strong>
-                  <span>Focused Android or iOS delivery with product polish.</span>
-                </div>
-              </article>
-              <article class="fit-item">
-                <i class="bi bi-credit-card-2-front"></i>
-                <div>
-                  <strong>Monetization flows</strong>
-                  <span>Subscriptions, payments, and premium upgrade journeys.</span>
-                </div>
-              </article>
-              <article class="fit-item">
-                <i class="bi bi-stars"></i>
-                <div>
-                  <strong>Modern product work</strong>
-                  <span>Media, utilities, AI features, and UX refinement.</span>
-                </div>
-              </article>
-            </div>
-          </article>
-        </div>
-      </section>
+    <main id="main-content" class="page-shell">
+      <section class="container work-intro"><div><div class="eyebrow">Contact / Available immediately</div><h1>Your next mobile developer.</h1><p>Full-time opportunities and scoped Flutter contracts. Let’s talk.</p></div></section><section class="container contact-banner"><div><h2>Have a role or a project in mind?</h2><p>Send the role details or the app problem you need solved.</p><a class="contact-email" href="mailto:faheemabbas766@gmail.com">faheemabbas766@gmail.com ↗</a><div class="button-row"><a class="button" href="mailto:faheemabbas766@gmail.com">Email me ↗</a><a class="button-secondary" href="https://linkedin.com/in/faheemabbas766" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div><div class="contact-facts"><p><span>Based in</span><strong>Islamabad, Pakistan</strong></p><p><span>Work arrangements</span><strong>Remote · Hybrid · Onsite</strong></p><p><span>Joining</span><strong>Immediately available</strong></p></div></section>
 
       <section class="section">
         <div class="container contact-grid">
@@ -178,7 +111,7 @@
             <span class="icon"><i class="bi bi-envelope-paper"></i></span>
             <div>
               <h3>Email</h3>
-              <p>The fastest direct route for project conversations, proposals, and product scope discussions.</p>
+              <p>For job opportunities, scoped Flutter work, and project conversations.</p>
             </div>
             <a href="mailto:faheemabbas766@gmail.com">faheemabbas766@gmail.com</a>
           </article>
