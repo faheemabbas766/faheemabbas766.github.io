@@ -1,0 +1,16 @@
+# Faheem Abbas
+
+> Flutter developer and mobile software engineer in Islamabad, Pakistan. Public professional portfolio, shipped app work and verified Flutter ecosystem contributions.
+
+## Profile
+
+- [Public profile](https://faheemabbas766.github.io/profile.html): Human-readable professional summary.
+- [Markdown profile](https://faheemabbas766.github.io/profile.md): Consolidated public skills, experience, projects and contribution evidence.
+- [JSON profile](https://faheemabbas766.github.io/profile.json): The same public facts in a structured format.
+
+## Portfolio
+
+- [Projects](https://faheemabbas766.github.io/projects.html): Project previews, responsibilities, details and store links.
+- [Merged contributions](https://faheemabbas766.github.io/flutter-contributors-pakistan.html): Nine verified merged pull requests as of October 6, 2026.
+- [Resume](https://faheemabbas766.github.io/resume.html): Experience and downloadable current CV.
+- [Contact](https://faheemabbas766.github.io/contact.html): Professional contact and availability.
