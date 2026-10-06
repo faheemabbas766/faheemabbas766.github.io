@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://github.com/flutter/packages/pull/12316",
+    "title": "[tool] Enforce README package table order",
+    "merged_at": "2026-10-01T00:50:10Z"
+  },
+  {
+    "url": "https://github.com/flutter/packages/pull/12315",
+    "title": "[google_maps_flutter] Document tile cache flicker",
+    "merged_at": "2026-09-16T17:36:00Z"
+  },
+  {
+    "url": "https://github.com/flutter/flutter/pull/189488",
+    "title": "[flutter_tools] Use resolved application ID for app link settings",
+    "merged_at": "2026-08-25T21:28:37Z"
+  },
+  {
+    "url": "https://github.com/flutter/core-packages/pull/22",
+    "title": "[vector_math] Document geometry filter APIs",
+    "merged_at": "2026-07-29T23:18:25Z"
+  },
+  {
+    "url": "https://github.com/flutter/flutter/pull/188372",
+    "title": "Parse AndroidX property in gradle.properties",
+    "merged_at": "2026-07-23T23:18:23Z"
+  },
+  {
+    "url": "https://github.com/flutter/core-packages/pull/12",
+    "title": "Document vector_math Plane API",
+    "merged_at": "2026-07-22T13:33:23Z"
+  },
+  {
+    "url": "https://github.com/flutter/packages/pull/11662",
+    "title": "[cross_file] Document native mimeType behavior",
+    "merged_at": "2026-06-30T19:21:00Z"
+  },
+  {
+    "url": "https://github.com/flutter/packages/pull/11820",
+    "title": "[video_player_web] Remove stale package:web tweaks",
+    "merged_at": "2026-06-17T18:29:24Z"
+  },
+  {
+    "url": "https://github.com/flutter/flutter/pull/186184",
+    "title": "Allow selecting multi-digit device options",
+    "merged_at": "2026-06-03T01:14:08Z"
+  }
+]
