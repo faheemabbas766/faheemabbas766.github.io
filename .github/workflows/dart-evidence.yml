@@ -1,0 +1,21 @@
+name: Dart engineering example
+on:
+  push:
+    paths: ['examples/fee_ledger/**', '.github/workflows/dart-evidence.yml']
+  pull_request:
+    paths: ['examples/fee_ledger/**', '.github/workflows/dart-evidence.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: examples/fee_ledger
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart format --output=none --set-exit-if-changed lib test
+      - run: dart analyze --fatal-infos
+      - run: dart test

@@ -2,7 +2,7 @@
   "name": "Faheem Abbas",
   "headline": "Flutter developer and mobile software engineer",
   "location": "Islamabad, Pakistan",
-  "availability": "Available to join immediately",
+  "availability": "Available with a 30-day notice period",
   "work_arrangements": [
     "remote",
     "hybrid",
@@ -14,7 +14,7 @@
   "github": "https://github.com/faheemabbas766",
   "linkedin": "https://www.linkedin.com/in/faheemabbas766/",
   "cv": "https://faheemabbas766.github.io/assets/Faheem_Abbas_Flutter_Developer_CV.pdf",
-  "updated": "2026-10-06",
+  "updated": "2026-10-11",
   "skills": [
     "Flutter",
     "Dart",
@@ -29,20 +29,26 @@
     "GetX",
     "Media3",
     "OpenAI API integrations",
-    "Mobile release support"
+    "Mobile release support",
+    "Flutter iOS delivery",
+    "Xcode",
+    "App Store Connect",
+    "Cubit state management"
   ],
   "experience": [
     {
       "role": "Software Engineer",
       "organization": "Invotyx",
       "start": "2024-06",
-      "end": "2026-08"
+      "end": null,
+      "current": true
     },
     {
       "role": "Independent Mobile App Developer",
       "organization": "Freelance",
       "start": "2023-07",
-      "end": "2024-11"
+      "end": "2024-11",
+      "employment_type": "Part-time contract alongside employed roles"
     },
     {
       "role": "Flutter Developer",
@@ -59,12 +65,23 @@
   ],
   "education": {
     "degree": "BS Computer Science",
-    "institution": "PMAS Arid Agriculture University",
+    "institution": "PMAS Arid University",
     "start": "2020-10",
     "end": "2024-10",
     "cgpa": "3.63"
   },
   "projects": [
+    {
+      "name": "Hostel Manager",
+      "category": "flutter",
+      "summary": "Independent Flutter/Firebase product with occupancy, fee ledgers, payments, checkout settlement, staff access and audit records. 81 automated tests passed on October 11, 2026; full private source not published.",
+      "url": "https://faheemabbas766.github.io/engineering.html",
+      "details": [
+        "Provider state management; transactional repository updates",
+        "Business-rule, repository and widget tests",
+        "Production maturity limits: automated disaster recovery and broader concurrency/device validation remain work to complete."
+      ]
+    },
     {
       "name": "Invoice Maker: Easy Bill",
       "category": "flutter",
@@ -154,23 +171,6 @@
         {
           "url": "https://play.google.com/store/apps/details?id=com.kiwishorts.vr&hl=en",
           "label": "Play Store"
-        }
-      ]
-    },
-    {
-      "name": "Aura Cleaner / DeepClean iOS",
-      "category": "ios",
-      "summary": "A native iOS storage cleanup product with duplicate-media cleanup, contacts and calendar tools, widget extensions, and premium upgrade flows.",
-      "url": "https://faheemabbas766.github.io/projects.html#aura-cleaner-deepclean-ios",
-      "details": [
-        "Duplicate photo and video cleanup plus contact merge utilities",
-        "Home screen widget extension with deep links back into the main app",
-        "Storage-focused UX with premium upsell and cleaning shortcuts"
-      ],
-      "links": [
-        {
-          "url": "https://apps.apple.com/us/app/aura-cleaner-clean-up-storage/id6753289051",
-          "label": "Apple Store"
         }
       ]
     },
