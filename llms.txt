@@ -14,3 +14,6 @@
 - [Merged contributions](https://faheemabbas766.github.io/flutter-contributors-pakistan.html): Nine verified merged pull requests as of October 6, 2026.
 - [Resume](https://faheemabbas766.github.io/resume.html): Experience and downloadable current CV.
 - [Contact](https://faheemabbas766.github.io/contact.html): Professional contact and availability.
+
+## RexWise AI Receptionist
+Independent voice AI product by Faheem Abbas. Cloud-connected Android gateway, Urdu/English calls, caller capture, saved appointment requests and QR pairing. Real SIM conversations tested on a compatible Pixel. Managed pricing and demos: https://rexwise.com/ai-receptionist/ . Country pricing does not guarantee local-number or device availability.
