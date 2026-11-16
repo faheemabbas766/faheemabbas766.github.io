@@ -17,3 +17,7 @@
 
 ## RexWise AI Receptionist
 Independent voice AI product by Faheem Abbas. Cloud-connected Android gateway, Urdu/English calls, caller capture, saved appointment requests and QR pairing. Real SIM conversations tested on a compatible Pixel. Managed pricing and demos: https://rexwise.com/ai-receptionist/ . Country pricing does not guarantee local-number or device availability.
+
+## Other RexWise products
+- [Hostel Manager](https://rexwise.com/hostel-management-software/): room and bed allocation, residents, fees, dues and receipts.
+- [GymDesk](https://faheemabbas766.github.io/projects.html#gymdesk): memberships, renewals, front-desk check-ins and branch roles. Demo enquiries through RexWise.
